@@ -1,0 +1,110 @@
+**********************
+PowerShell transcript start
+Start time: 20211123123843
+Username: DSM\KLayne
+RunAs User: DSM\KLayne
+Configuration Name: 
+Machine: DSM-TAC15 (Microsoft Windows NT 10.0.19043.0)
+Host Application: C:\Program Files\PowerShell\7\pwsh.dll -NoProfile -NonInteractive -ExecutionPolicy Bypass -Command Import-Module 'c:\Users\klayne\.vscode\extensions\ms-vscode.powershell-2021.10.2\modules\PowerShellEditorServices\PowerShellEditorServices.psd1'; Start-EditorServices -HostName 'Visual Studio Code Host' -HostProfileId 'Microsoft.VSCode' -HostVersion '2021.10.2' -AdditionalModules @('PowerShellEditorServices.VSCode') -BundledModulesPath 'c:\Users\klayne\.vscode\extensions\ms-vscode.powershell-2021.10.2\modules' -EnableConsoleRepl -StartupBanner '=====> PowerShell Integrated Console v2021.10.2 <=====
+' -LogLevel 'Normal' -LogPath 'c:\Users\klayne\.vscode\extensions\ms-vscode.powershell-2021.10.2\logs\1637687689-32bdc1c6-ba3d-433a-adfe-cd4f2bdb0edb1637687685013\EditorServices.log' -SessionDetailsPath 'c:\Users\klayne\.vscode\extensions\ms-vscode.powershell-2021.10.2\sessions\PSES-VSCode-15296-561005' -FeatureFlags @() 
+Process ID: 14344
+PSVersion: 7.2.0
+PSEdition: Core
+GitCommitId: 7.2.0
+OS: Microsoft Windows 10.0.19043
+Platform: Win32NT
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.10032.0, 6.0.0, 6.1.0, 6.2.0, 7.0.0, 7.1.0, 7.2.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+WSManStackVersion: 3.0
+**********************
+Transcript started, output file is C:\Users\klayne\Git\external\20211123123839-failedLogonLookup.ps1.txt
+
+https://github.com/DSM-Technology-Consultants
+ >failedLogonLookup.ps1
+PS>TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> @{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      14344
+computerName                   DSM-TAC15
+instanceId                     8f9ad22f-6e0a-4cf2-b764-7269f47ebce6
+
+PS C:\Users\klayne\Git\external> cls
+PS C:\Users\klayne\Git\external> @{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      14344
+computerName                   DSM-TAC15
+instanceId                     8f9ad22f-6e0a-4cf2-b764-7269f47ebce6
+
+PS C:\Users\klayne\Git\external> c:\Users\klayne\Git\external\failedLogonLookup.ps1
+You must invoke this script from an elevated PowerShell console
+Launch 'Windows PowerShell (Admin)' and paste the following command into the console:
+
+powershell -executionPolicy bypass -file "C:\Users\klayne\Git\external\failedLogonLookup.ps1"
+Transcript started, output file is C:\Users\klayne\Git\external\20211123123938-failedLogonLookup.ps1.txt
+
+https://github.com/DSM-Technology-Consultants
+ >failedLogonLookup.ps1
+PS C:\Users\klayne\Git\external> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> TerminatingError(): "The pipeline has been stopped."
+>> @{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      14344
+computerName                   DSM-TAC15
+instanceId                     8f9ad22f-6e0a-4cf2-b764-7269f47ebce6
+
+PS C:\Users\klayne\Git\external> cls
+PS C:\Users\klayne\Git\external> @{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      14344
+computerName                   DSM-TAC15
+instanceId                     8f9ad22f-6e0a-4cf2-b764-7269f47ebce6
+
+You must invoke this script from an elevated PowerShell console
+Launch 'Windows PowerShell (Admin)' and paste the following command into the console:
+
+powershell -executionPolicy bypass -file "C:\Users\klayne\Git\external\failedLogonLookup.ps1"
+PS C:\Users\klayne\Git\external> @{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      14344
+computerName                   DSM-TAC15
+instanceId                     8f9ad22f-6e0a-4cf2-b764-7269f47ebce6
+
+You must invoke this script from an elevated PowerShell console
+Launch 'Windows PowerShell (Admin)' and paste the following command into the console:
+
+powershell -executionPolicy bypass -file "C:\Users\klayne\Git\external\failedLogonLookup.ps1"
+
+PS C:\Users\klayne\Git\external> @{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      14344
+computerName                   DSM-TAC15
+instanceId                     8f9ad22f-6e0a-4cf2-b764-7269f47ebce6
+
+PS C:\Users\klayne\Git\external> cls
+PS C:\Users\klayne\Git\external> @{ 'computerName' = if ([Environment]::MachineName) {[Environment]::MachineName}  else {'localhost'}; 'processId' = $PID; 'instanceId' = $host.InstanceId }
+
+Name                           Value
+----                           -----
+processId                      14344
+computerName                   DSM-TAC15
+instanceId                     8f9ad22f-6e0a-4cf2-b764-7269f47ebce6
+
+You must invoke this script from an elevated PowerShell console
+Launch 'Windows PowerShell (Admin)' and paste the following command into the console:
+
+powershell -executionPolicy bypass -file "C:\Users\klayne\Git\external\failedLogonLookup.ps1"
