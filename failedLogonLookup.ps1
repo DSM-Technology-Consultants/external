@@ -10,7 +10,7 @@ $runAsAdministrator = ([Security.Principal.WindowsPrincipal][Security.Principal.
 if (!($runAsAdministrator)) {
   write-host "You must invoke this script from an elevated PowerShell console" -f yellow
   write-host "Launch 'Windows PowerShell (Admin)' and paste the following command into the console:`n`npowershell -executionPolicy bypass -file `"$path\$scriptName`"`n"
-  pause
+  read-host -prompt "Press any key to continue"
   exit
 }
 
