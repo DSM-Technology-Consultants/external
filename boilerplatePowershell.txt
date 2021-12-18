@@ -1,4 +1,19 @@
-# author: NAME <EMAIL>
+<# author: <name> <email>
+  .SYNOPSIS
+  .DESCRIPTION
+  .EXAMPLE
+  .INPUTS
+  .OUTPUTS
+  .NOTES
+#>
+
+[CmdletBinding()]
+param (
+    [Parameter()]
+    [TypeName]
+    $ParameterName
+    #param description
+)
 
 $gitHub = "https://github.com/DSM-Technology-Consultants"
 $scriptName = $myInvocation.myCommand.name
@@ -17,6 +32,10 @@ if (!($runAsAdministrator)) {
 start-transcript -path $transcript
 write-host "`n$gitHub`n >$scriptName`n"
 
-<# INSERT: MEAT & POTATOES #>
+<# 
+  MEAT 
+    &
+  POTATOES
+#>
 
 exit
