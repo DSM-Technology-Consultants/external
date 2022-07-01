@@ -1,0 +1,20 @@
+name: Push repository to Azure DevOps
+on: [push, workflow_dispatch]
+env:
+  _AZURE_PAT: ${{ secrets._AZURE_PAT }}
+  _AZURE_REPO: "dev.azure.com/DSM-Technology-Consultants/public_repos/_git/common"
+  _GITHUB_PAT: ${{ secrets._GITHUB_PAT }}
+  _CWD: tmp_repo
+jobs:
+  sync_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create mirror of GitHub repository
+        run: git clone --mirror https://$_GITHUB_PAT@github.com/$GITHUB_REPOSITORY.git $_CWD
+      - name: Push mirror to Azure DevOps repository
+        run: |
+          git remote rm origin
+          git remote add --mirror=fetch origin https://$_AZURE_PAT@$_AZURE_REPO
+          git fetch https://$_GITHUB_PAT@github.com/$GITHUB_REPOSITORY.git
+          git push origin --all -f
+        working-directory: ${{ env._CWD }}
